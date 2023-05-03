@@ -15,9 +15,6 @@ let package = Package(
         .package(name: "XCGLogger",
                  url: "https://github.com/DaveWoodCom/XCGLogger.git",
                  .upToNextMajor(from: "7.0.0")),
-        .package(name: "ObjcExceptionBridging",
-                 url: "https://github.com/DaveWoodCom/XCGLogger.git",
-                 .upToNextMajor(from: "7.0.0")),
         .package(name: "PlayKitUtils",
                  url: "https://github.com/kaltura/playkit-ios-utils.git",
                  .upToNextMinor(from: "0.5.1")),
@@ -32,7 +29,7 @@ let package = Package(
                         [
                             "SwiftyJSON",
                             "XCGLogger",
-                            "ObjcExceptionBridging",
+                            .product(name: "ObjcExceptionBridging", package: "XCGLogger"),
                             .product(name: "PlayKitUtils", package: "PlayKitUtils"),
                             .product(name: "KalturaNetKit", package: "KalturaNetKit"),
                         ],
