@@ -27,6 +27,7 @@ let package = Package(
                         [
                             "SwiftyJSON",
                             "XCGLogger",
+                            "ObjcExceptionBridging",
                             .product(name: "PlayKitUtils", package: "PlayKitUtils"),
                             .product(name: "KalturaNetKit", package: "KalturaNetKit"),
                         ],
