@@ -12,7 +12,12 @@ let package = Package(
                         targets: ["AnalyticsCommon"])],
     dependencies: [
         .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", .upToNextMajor(from: "5.0.0")),
-        .package(url: "https://github.com/DaveWoodCom/XCGLogger.git", .upToNextMajor(from: "7.0.0")),
+        .package(name: "XCGLogger",
+                 url: "https://github.com/DaveWoodCom/XCGLogger.git",
+                 .upToNextMajor(from: "7.0.0")),
+        .package(name: "ObjcExceptionBridging",
+                 url: "https://github.com/DaveWoodCom/XCGLogger.git",
+                 .upToNextMajor(from: "7.0.0")),
         .package(name: "PlayKitUtils",
                  url: "https://github.com/kaltura/playkit-ios-utils.git",
                  .upToNextMinor(from: "0.5.1")),
